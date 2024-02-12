@@ -39,8 +39,7 @@ class HBNBCommand(cmd.Cmd):
     """
 
     prompt = "(hbnb) "
-    _classes_ = 
-    {
+    _classes_ = {
         "BaseModel",
         "User",
         "State",
@@ -56,8 +55,7 @@ class HBNBCommand(cmd.Cmd):
 
     def default(self, arg):
         """Default behavior for cmd module when input is invalid"""
-        argdict = 
-        {
+        argdict = {
             "all": self.do_all,
             "show": self.do_show,
             "destroy": self.do_destroy,
